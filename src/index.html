@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.3.2/axe.min.js" integrity="sha512-WkUJ/8fw3f00PljU42yeF/JCF+QSjUILI1RyK0oLCBn+96+g2Zya/z43QIWHaVXKBHP9A4OsU2QgSS8l/SVspg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="/build/rating-stencil-component.esm.js"></script>
     <script nomodule src="/build/rating-stencil-component.js"></script>
     <script>
@@ -17,11 +17,19 @@
     </script>
   </head>
   <body>
-    <div class="container" role="article" tabindex="3"></div>
-    <img id="1" src="http://placehold.it/">
-    <img id="2" src="http://placehold.it/">
-
     <button>Click Me!</button>
     <my-rating id="myRatingComponent" max-value="10" value="5"></my-rating>
+    <script>
+      axe
+  .run()
+  .then(results => {
+    if (results.violations.length) {
+      throw new Error('Accessibility issues found');
+    }
+  })
+  .catch(err => {
+    console.error('Something bad happened:', err.message);
+  });
+    </script>
   </body>
 </html>

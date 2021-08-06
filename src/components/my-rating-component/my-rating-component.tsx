@@ -39,6 +39,7 @@ export  class  MyRatingComponent  {
    render() {
     return  (
       <div>
+        <img src="asas" />
         {this.starList}
       </div>
     );
