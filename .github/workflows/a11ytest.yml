@@ -52,6 +52,8 @@ jobs:
       run: which chromedriver
     - name: install dependencies
       run: npm i
+    - name: install axe cli
+      run: npm i -g @axe-core/cli  
     - name: run test
-      run: node index.js
+      run: axe https://www.deque.com
 
