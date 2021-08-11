@@ -55,5 +55,5 @@ jobs:
     - name: install axe cli
       run: npm i -g @axe-core/cli  
     - name: run test
-      run: axe https://www.deque.com
+      run: axe https://www.deque.com --show-errors
 
