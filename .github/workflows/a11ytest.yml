@@ -37,11 +37,11 @@ jobs:
     - name: unzip
       run: unzip chromedriver_linux64.zip
     - name: Move executable and create symlinks
-      run: sudo mv -f chromedriver ~/Documents/chromedriver
+      run: sudo mv -f chromedriver ~/
     - name: make executable
-      run: chmod +x ~/Documents/chromedriver  
+      run: chmod +x ~/chromedriver  
     - name: Add directory to path
-      run: echo 'export PATH="$HOME/Documents/ChromeDriver:$PATH"' >> ~/.profile
+      run: echo 'export PATH="$HOME:$PATH"' >> ~/.profile
     - name: Reload profile
       run: source ~/.profile
     - name: install dependencies
