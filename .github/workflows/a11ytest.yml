@@ -42,6 +42,8 @@ jobs:
       run: chmod +x ~/chromedriver  
     - name: Add directory to path
       run: echo 'export PATH="$HOME:$PATH"' >> ~/.profile
+    - name: Add chromedriver to path
+      run: echo 'export PATH="/usr/bin:$PATH"' >> ~/.profile
     - name: Reload profile
       run: source ~/.profile
     - name: Check browser version
