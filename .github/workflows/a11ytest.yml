@@ -44,6 +44,10 @@ jobs:
       run: echo 'export PATH="$HOME:$PATH"' >> ~/.profile
     - name: Reload profile
       run: source ~/.profile
+    - name: Check browser version
+      run: google-chrome --version
+    - name: Check chrome driver
+      run: which chromedriver
     - name: install dependencies
       run: npm i
     - name: run test
