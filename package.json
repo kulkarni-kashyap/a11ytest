@@ -22,7 +22,8 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.0.1",
+    "husky": "^7.0.1"
   },
   "devDependencies": {
     "@axe-core/webdriverjs": "^4.2.2",
