@@ -44,4 +44,8 @@ jobs:
       run: sudo ln -fs /usr/local/share/chromedriver /usr/local/bin/chromedriver
     - name: create symlink2
       run: sudo ln -fs /usr/local/share/chromedriver /usr/bin/chromedriver
+    - name: install dependencies
+      run: npm i
+    - name: run test
+      run: node index.js
 
