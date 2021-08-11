@@ -8,7 +8,7 @@ on:
 jobs:
   Test:
 
-    runs-on: fw-shared
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
