@@ -55,5 +55,5 @@ jobs:
     - name: install axe cli
       run: npm i -g conduct-a11y-audit
     - name: run test
-      run: a11y-audit -u https://localhost:3333 -s true --ss start 
+      run: a11y-audit -u http://localhost:3333 -s true --ss start 
 
