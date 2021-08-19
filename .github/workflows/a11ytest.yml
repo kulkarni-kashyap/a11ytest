@@ -53,7 +53,7 @@ jobs:
     - name: install dependencies
       run: npm i
     - name: install axe cli
-      run: npm i -g perform-a11y-audit
+      run: npm i -g conduct-a11y-audit
     - name: run test
-      run: a11y-audit -u https://www.google.com -s false
+      run: a11y-audit -u https://localhost:3333 -s true --ss start 
 
