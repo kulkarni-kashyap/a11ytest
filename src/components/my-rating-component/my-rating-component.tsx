@@ -39,6 +39,9 @@ export  class  MyRatingComponent  {
    render() {
     return  (
       <div>
+        <img src="asas" />
+        {/* <button style={{color: "white", backgroundColor: "yellow"}}>TEST BUTTON</button> */}
+        <button style={{color: "white"}}>HEY</button>
         {this.starList}
       </div>
     );

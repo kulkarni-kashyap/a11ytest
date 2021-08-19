@@ -22,14 +22,12 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.0.1",
+    "husky": "^7.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "jest": "^26.6.3",
-    "jest-cli": "^26.6.3",
-    "puppeteer": "^5.5.0",
-    "@types/puppeteer": "^5.4.3"
+    "@axe-core/webdriverjs": "^4.2.2",
+    "selenium-webdriver": "^4.0.0-beta.4"
   },
   "license": "MIT"
 }
